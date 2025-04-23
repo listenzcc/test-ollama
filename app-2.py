@@ -34,7 +34,6 @@ def generate_feedback(scores):
 f'注意力量表：{scores_txt}。',
 f'建议风格：{suggests_txt}'
 ]),
-        # system=f'你是一个注意力咨询师。注意力量表：{scores_txt}。建议风格：{suggests_txt}',
         prompt=f'客户注意力分数：{scores}。用口语化方式直接告知结果并给出具体建议（限200字）',
         options={"temperature": 0.7, "num_predict": 2000},
     )
